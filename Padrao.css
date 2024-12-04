@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f1f1f1;
+}
+
+h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 0 20px;
+}
+
+a:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #ceffe1;
+  height: 8vh;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  padding: 10px;
+  margin-left: 20px;
+  width: 10vw;
+  height: auto;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  color: #f1f1f1;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: white;
+  margin: 8px;
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+main{
+  background: url("Home_fundo.jpeg") no-repeat 
+  center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+p {
+  text-align: center;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.row {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  flex: 0 0 75%;
+  padding: 20px;
+}
+
+aside {
+  flex: 0 0 25%;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #ceffe1;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#copyright {
+  padding: 10px;
+  color: #333;
+}
+
+.saiba {
+  width: 100%;
+  position: relative;
+  align-items: center;
+  padding: 5px;
+  font-size: 16px;
+  color: white;
+  background-color: #7dd898;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.saiba:hover {
+  background-color: #7dd898;
+  opacity: 1;
+}
+
+.Olimpiadas {
+  position: relative;
+  height: 400px;
+  object-fit: cover;
+}
+
+.Logo-SobreNos {
+display: flex;
+align-items: center;
+justify-content: center;
+width: auto;
+margin: auto;
+padding-top:2vh ;
+}
+ .texto-foto {
+   text-align: left;
+   font-family:Arial, Helvetica, sans-serif;
+ }
+
+
+.lista {
+  margin-left: 2vw;
+}
+
+h6 {
+  text-align: center;
+}
+
+.card li, .titulo-lista {
+  line-height: 1.5rem;
+}
+
+@media (max-width: 999px) {
+  body {
+      overflow-x: hidden;
+  }
+
+  .nav-list.active {
+      transform: translateX(0);
+  }
+  
+  .mobile-menu {
+      display: block;
+  }
+  section {
+      flex: 0 0 100%;
+  }
+  aside {
+      flex: 0 0 100%;
+      padding: 10px 20px;
+      position: relative;
+  }
+}
+
+@media (max-width: 500px) {
+  aside {
+      display: block;
+      position: relative;
+      width: 100%;
+      margin-top: 20px;
+  }
+  .logo img {
+      width: 40%;
+      height: auto;
+  }
+  .nav-list {
+      width: 100%;
+      top: 8vh;
+      transform: translate(100%);
+  }
+  .nav-list.active {
+      transform: translateX(0);
+  }
+}
+
+@media (max-widht: 500px) {
+  aside {
+    
+    display: inline;
+    position: fixed;
+    flex-direction: column;
+  }
+}
